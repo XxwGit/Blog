@@ -1,0 +1,71 @@
+package com.json.util;
+
+import java.io.FileWriter;
+import java.io.IOException;
+//生成json文件
+public class SetJson {
+	public void write(String string,String fileString) {
+        try {
+            FileWriter writer = new FileWriter(fileString);
+            writer.write(string);
+            writer.flush();
+            writer.close();
+            
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+      
+	}
+	public String Fetch(String string,String fileString) {
+		SetJson setJson = new SetJson();
+		setJson.
+		return fileString;
+	}
+	public static void main(String[] args) {
+		SetJson setJson = new SetJson();
+		setJson.write("{\"@xmlns\":\"http://maven.apache.org/POM/4.0.0\",\"@xmlns:xsi\":\"http://www.w3.org/2001/XMLSchema-instance\",\"@xsi:schemaLocation\":\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd\",\"modelVersion\":\"4.0.0\",\"groupId\":\"com.freesoft.mvn-webapp\",\"artifactId\":\"mvnwebapp\",\"packaging\":\"war\",\"version\":\"1.0-SNAPSHOT\",\"name\":\"mvnwebapp Maven Webapp\",\"url\":\"http://maven.apache.org\",\"dependencies\":{\"dependency\":{\"groupId\":\"junit\",\"artifactId\":\"junit\",\"version\":\"4.11\",\"scope\":\"test\"}},\"build\":{\"finalName\":\"mvnwebapp\",\"pluginManagement\":{\"plugins\":{\"plugin\":{\"groupId\":\"org.apache.tomcat.maven\",\"artifactId\":\"tomcat7-maven-plugin\",\"version\":\"2.1\",\"configuration\":{\"tomcat-url\":\"http://localhost:8080/manager/html\",\"server\":\"tomcat_localtest\"}}}}},\"properties\":{\"struts.version\":\"2.3.15\",\"mysql.version\":\"5.1.29\",\"hibernate.version\":\"4.3.1.Final\"}}\r\n" + 
+				"{\r\n" + 
+				"	\"@xmlns\":\"http://maven.apache.org/POM/4.0.0\",\r\n" + 
+				"	\"@xmlns:xsi\":\"http://www.w3.org/2001/XMLSchema-instance\",\r\n" + 
+				"	\"@xsi:schemaLocation\":\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd\",\r\n" + 
+				"	\"modelVersion\":\"4.0.0\",\r\n" + 
+				"	\"groupId\":\"com.freesoft.mvn-webapp\",\r\n" + 
+				"	\"artifactId\":\"mvnwebapp\",\r\n" + 
+				"	\"packaging\":\"war\",\r\n" + 
+				"	\"version\":\"1.0-SNAPSHOT\",\r\n" + 
+				"	\"name\":\"mvnwebapp Maven Webapp\",\r\n" + 
+				"	\"url\":\"http://maven.apache.org\",\r\n" + 
+				"	\"dependencies\":{\r\n" + 
+				"		\"dependency\":{\r\n" + 
+				"			\"groupId\":\"junit\",\r\n" + 
+				"			\"artifactId\":\"junit\",\r\n" + 
+				"			\"version\":\"4.11\",\r\n" + 
+				"			\"scope\":\"test\"\r\n" + 
+				"		}\r\n" + 
+				"	},\r\n" + 
+				"	\"build\":{\r\n" + 
+				"		\"finalName\":\"mvnwebapp\",\r\n" + 
+				"		\"pluginManagement\":{\r\n" + 
+				"			\"plugins\":{\r\n" + 
+				"				\"plugin\":{\r\n" + 
+				"					\"groupId\":\"org.apache.tomcat.maven\",\r\n" + 
+				"					\"artifactId\":\"tomcat7-maven-plugin\",\r\n" + 
+				"					\"version\":\"2.1\",\r\n" + 
+				"					\"configuration\":{\r\n" + 
+				"						\"tomcat-url\":\"http://localhost:8080/manager/html\",\r\n" + 
+				"						\"server\":\"tomcat_localtest\"\r\n" + 
+				"					}\r\n" + 
+				"				}\r\n" + 
+				"			}\r\n" + 
+				"		}\r\n" + 
+				"	},\r\n" + 
+				"	\"properties\":{\r\n" + 
+				"		\"struts.version\":\"2.3.15\",\r\n" + 
+				"		\"mysql.version\":\"5.1.29\",\r\n" + 
+				"		\"hibernate.version\":\"4.3.1.Final\"\r\n" + 
+				"	}\r\n" + 
+				"}\r\n" + 
+				"");
+	}
+	 
+}

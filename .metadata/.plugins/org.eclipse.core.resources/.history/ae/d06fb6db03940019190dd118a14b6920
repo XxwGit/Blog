@@ -1,0 +1,23 @@
+package com.json.util;
+
+import java.io.FileWriter;
+import java.io.IOException;
+//生成json文件
+public class SetJson {
+	public void write(String string) {
+		String string2 ="E:/token.json";
+		FileWriter writer;
+        try {
+            writer = new FileWriter(string2);
+            writer.write(string);
+            writer.flush();
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+	}
+	/*
+	 * public static void main(String[] args) { SetJson setJson = new SetJson();
+	 * setJson.write("dssfsdffdfsdfsfs随风倒士大夫撒旦"); }
+	 */
+}

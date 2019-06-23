@@ -1,0 +1,15 @@
+package com.json;
+
+import java.io.File;
+
+public class WriteFloder {
+	File file = new File("E:\\SpringBootCode\\SpringBoot\\test.xml");
+	public static void main(String[] args) {
+		//获取目标文件夹
+		File destDir = new File("e:/code/java/jad");
+		if(!destDir.exists()) {
+            destDir.mkdir();
+        }
+		//
+	}
+}

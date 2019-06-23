@@ -1,0 +1,13 @@
+package com.json.util;
+
+public class JsonThread implements Runnable{
+	private String sourseString;
+	
+	@Override
+	public void run() {
+		RealizeClass tRealizeClass = new RealizeClass();
+		int length = tRealizeClass.getLength(sourseFile)
+		// TODO Auto-generated method stub
+		
+	}
+}

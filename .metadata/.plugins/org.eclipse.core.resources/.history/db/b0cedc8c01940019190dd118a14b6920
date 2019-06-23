@@ -1,0 +1,18 @@
+package com.json;
+
+import net.sf.json.JSONObject;
+import net.sf.json.xml.XMLSerializer;
+//½«
+public class Xml2Json {
+	public static void main(String[] args) {
+		GetXml getXml = new GetXml();
+		String xml = getXml.turnDocumentToString("E:\\SpringBootCode\\SpringBoot\\test.xml");
+		XMLSerializer xmlSerializer = new XMLSerializer();
+		String jsonString = xmlSerializer.read(xml).toString();
+		System.out.println(JSONObject.fromObject(jsonString));
+	}
+	
+	public void name() {
+		
+	}
+}

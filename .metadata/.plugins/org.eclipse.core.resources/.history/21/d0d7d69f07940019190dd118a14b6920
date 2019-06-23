@@ -1,0 +1,25 @@
+package com.json.util;
+
+import java.io.FileWriter;
+import java.io.IOException;
+//生成json文件
+public class SetJson {
+	public void write(String string) {
+        try {
+            FileWriter writer = new FileWriter("e:\\test\\11.json");
+            writer.write(string);
+            writer.flush();
+            writer.close();
+            
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+      
+	}
+
+	public static void main(String[] args) {
+		SetJson setJson = new SetJson();
+		setJson.write("sadasd翻跟斗翻跟斗");
+	}
+	 
+}

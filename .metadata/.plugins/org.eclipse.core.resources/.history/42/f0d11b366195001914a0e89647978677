@@ -1,0 +1,5 @@
+package com.json.folder.util;
+
+public class JsonFileThread {
+
+}

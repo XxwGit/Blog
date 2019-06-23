@@ -1,0 +1,18 @@
+package com.json.util;
+
+public class Test {
+	public static void main(String[] args) {
+		Xml2Json xml2Json = new Xml2Json();
+		//1.获取xml转json后的String文件
+		String jsonString = xml2Json.name("E:\\SpringBootCode\\SpringBoot\\test.xml");
+		//2.将String文件格式化
+		FormatUtil formatUtil = new FormatUtil();
+		String formateString = formatUtil.formatJson(jsonString);
+		//3.将格式化的文件写入文件中
+		SetJson setJson = new SetJson();
+		WriteFloder writeFloder = new WriteFloder();
+		writeFloder.main(fileString, "");
+		
+		//4.将文件
+	}
+}

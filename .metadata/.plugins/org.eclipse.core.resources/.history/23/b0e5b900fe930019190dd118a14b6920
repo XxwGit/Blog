@@ -1,0 +1,7 @@
+package com.json;
+
+public class SetJson {
+	public boolean name() {
+		
+	}
+}

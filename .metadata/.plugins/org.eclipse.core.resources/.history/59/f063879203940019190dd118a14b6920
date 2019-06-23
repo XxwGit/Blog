@@ -1,0 +1,9 @@
+package com.json.util;
+
+public class Test {
+	public static void main(String[] args) {
+		Xml2Json xml2Json = new Xml2Json();
+		
+		String jsonString = xml2Json.name("E:\\SpringBootCode\\SpringBoot\\test.xml");
+	}
+}

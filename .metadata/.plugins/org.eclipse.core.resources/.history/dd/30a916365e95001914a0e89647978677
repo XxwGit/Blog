@@ -1,0 +1,7 @@
+package com.json.file.util;
+
+public class FileRealize {
+	public void XmlToJson() {
+		
+	}
+}

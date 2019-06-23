@@ -1,0 +1,7 @@
+package com.json.test;
+
+import org.eclipse.swt.widgets.Shell;
+
+public class ShellTest extends Shell{
+
+}

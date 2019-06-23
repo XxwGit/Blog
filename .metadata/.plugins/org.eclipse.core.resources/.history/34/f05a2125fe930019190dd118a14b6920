@@ -1,0 +1,15 @@
+package com.json;
+
+public class SetJson {
+	public void write(String string,String file) {
+		FileWriter writer;
+        try {
+            writer = new FileWriter("E:/token.txt");
+            writer.write(str);
+            writer.flush();
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+	}
+}

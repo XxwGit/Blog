@@ -1,0 +1,19 @@
+package com.json;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class SetJson {
+	public void write(String string,String file) {
+		String string2 ="E:/token.txt";
+		FileWriter writer;
+        try {
+            writer = new FileWriter("");
+            writer.write(string);
+            writer.flush();
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+	}
+}

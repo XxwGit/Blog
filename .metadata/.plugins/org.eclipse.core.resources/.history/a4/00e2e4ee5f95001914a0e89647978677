@@ -1,0 +1,15 @@
+package com.json.file.util;
+
+import com.json.folder.util.GetXml;
+import com.json.folder.util.Xml2Json;
+
+public class FileRealize {
+	public void XmlToJson(String fileName,String targetFolder) {
+		GetXml getXml = new GetXml();
+		String jsonName = getXml.getName(fileName);
+		
+		Xml2Json xml2Json = new Xml2Json();
+		//1.获取xml转json后的String文件
+		String jsonString = xml2Json.XmlToJson(fileName);
+	}
+}

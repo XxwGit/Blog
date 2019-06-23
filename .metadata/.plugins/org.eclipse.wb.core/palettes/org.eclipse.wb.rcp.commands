@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<commands>
+	<addCategory
+		id="custom_1561100493182"
+		name="ss"
+		description=""
+		visible="true"
+		open="true"
+		nextCategory="org.eclipse.wb.rcp.controls"/>
+	<addCategory
+		id="custom_1561100689994"
+		name="dfgdf"
+		description=""
+		visible="true"
+		open="true"/>
+</commands>

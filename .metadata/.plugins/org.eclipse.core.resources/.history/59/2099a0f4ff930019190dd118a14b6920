@@ -1,0 +1,10 @@
+package com.json;
+
+import java.io.File;
+
+public class WriteFloder {
+	public static void main(String[] args) {
+		File destDir = new File("e:/code/java/jad");
+		
+	}
+}

@@ -1,0 +1,21 @@
+package com.json.util;
+
+public class Test {
+	public static void main(String[] args) throws Exception {
+		String testString = "11.txt";
+		Xml2Json xml2Json = new Xml2Json();
+		//1.获取xml转json后的String文件
+		String jsonString = xml2Json.name("E:\\SpringBootCode\\SpringBoot\\test.xml");
+		//2.将String文件格式化
+		FormatUtil formatUtil = new FormatUtil();
+		String formateString = formatUtil.formatJson(jsonString);
+		System.out.println(formateString);
+		//3.将格式化的文件写入文件中进行保存
+		SetJson setJson = new SetJson();
+		String filString = setJson.write(formateString, "e:\\test\\"+testString);
+		System.out.println(filString);
+		WriteFloder writeFloder = new WriteFloder();
+		writeFloder.main(setJson.write(), "e:\\test");		
+	
+	}
+}

@@ -1,0 +1,11 @@
+package com.json.util;
+
+public class JsonThread implements Runnable{
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

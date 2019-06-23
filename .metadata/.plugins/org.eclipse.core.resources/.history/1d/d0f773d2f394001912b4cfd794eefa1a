@@ -1,0 +1,5 @@
+package com.json.util;
+
+public class JsonThread implements Runnable{
+
+}

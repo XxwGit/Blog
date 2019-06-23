@@ -1,0 +1,10 @@
+package com.json.file.util;
+
+import com.json.folder.util.GetXml;
+
+public class FileRealize {
+	public void XmlToJson(String fileName,String targetFolder) {
+		GetXml getXml = new GetXml();
+		String jsonName = getXml.getName(+files[i]);
+	}
+}
