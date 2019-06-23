@@ -1,7 +1,6 @@
 package com.json.swt;
 
 import java.io.File;
-import java.io.IOException;
 
 import javax.swing.JFileChooser;
 import javax.swing.JLabel;
@@ -11,18 +10,11 @@ import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.events.SelectionListener;
-import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Display;
-import org.eclipse.swt.widgets.FileDialog;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
-import org.eclipse.ui.forms.events.HyperlinkAdapter;
-import org.eclipse.ui.forms.events.HyperlinkEvent;
-import org.eclipse.ui.forms.widgets.FormToolkit;
-import org.eclipse.ui.forms.widgets.Hyperlink;
-
 import com.json.thread.JsonFileThread;
 import com.json.thread.JsonFolderThread;
 
@@ -31,8 +23,6 @@ public class FileChooser {
 	protected Shell shell;
 	private Text sourseFile;
 	private Text targetFile;
-	private Text fileNameText;
-	private final FormToolkit formToolkit = new FormToolkit(Display.getDefault());
 	public String sourceFileString;
 	public String targetFileString;
 	/**
@@ -92,9 +82,9 @@ public class FileChooser {
 		        
 		        File file=jfc.getSelectedFile();  
 		        if(file.isDirectory()){  
-		            System.out.println("文件夹:"+file.getAbsolutePath());  
+		            System.out.println("源文件夹:"+file.getAbsolutePath());  
 		        }else if(file.isFile()){  
-		            System.out.println("文件:"+file.getAbsolutePath());  
+		            System.out.println("源文件:"+file.getAbsolutePath());  
 		        }  
 		        sourseFile.setText(file.getAbsolutePath());
 		        sourceFileString = file.getAbsolutePath();
@@ -119,9 +109,9 @@ public class FileChooser {
 		        jfc.showDialog(new JLabel(), "选择");  
 		        File file=jfc.getSelectedFile();  
 		        if(file.isDirectory()){  
-		            System.out.println("文件夹:"+file.getAbsolutePath());  
+		            System.out.println("目标文件夹:"+file.getAbsolutePath());  
 		        }else if(file.isFile()){  
-		            System.out.println("文件:"+file.getAbsolutePath());  
+		            System.out.println("目标文件:"+file.getAbsolutePath());  
 		        }  
 		        targetFile.setText(file.getAbsolutePath());
 		        targetFileString = file.getAbsolutePath();
@@ -138,14 +128,14 @@ public class FileChooser {
 				String path =sourceFileString;
 		        File file = new File(path);
 		        if(file.isDirectory()){
-		            System.out.println("是文件夹");
+		            System.out.println("准换的目标是文件夹");
 		            JsonFolderThread jsonThread = new JsonFolderThread(sourceFileString, targetFileString);
 					Thread thread = new Thread(jsonThread);
 					thread.run();
 					MessageDialog.openInformation(shell, "提示", "转换成功");
 		        }
 		        if(file.isFile()){
-		            System.out.println("是文件");
+		            System.out.println("准换的目标是文件");
 		            JsonFileThread jsonFileThread = new JsonFileThread(sourceFileString, targetFileString);
 		            Thread thread = new Thread(jsonFileThread);
 					thread.run();

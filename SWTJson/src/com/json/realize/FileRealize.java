@@ -1,9 +1,6 @@
 package com.json.realize;
 
-import java.io.File;
-
 import com.json.util.FormatUtil;
-import com.json.util.GetFile;
 import com.json.util.GetXml;
 import com.json.util.SetJson;
 import com.json.util.Xml2Json;
@@ -22,10 +19,6 @@ public class FileRealize {
 		String formateString = formatUtil.formatJson(jsonString);
 		// 3.将格式化的文件写入文件中进行保存
 		SetJson setJson = new SetJson();
-		String filString = setJson.Fetch(formateString, targetFolder + "//" + jsonName);
-	}
-	public static void main(String[] args) {
-		FileRealize fileRealize = new FileRealize();
-		fileRealize.XmlToJson("E:\\repo\\XxwGit.github.io\\_includes\\XmlTest\\test.xml", "E://test");
+		setJson.Fetch(formateString, targetFolder + "//" + jsonName);
 	}
 }

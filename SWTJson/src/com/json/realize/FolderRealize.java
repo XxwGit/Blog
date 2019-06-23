@@ -26,7 +26,7 @@ public class FolderRealize {
 		String formateString = formatUtil.formatJson(jsonString);
 		//3.将格式化的文件写入文件中进行保存
 		SetJson setJson = new SetJson();
-		String filString = setJson.Fetch(formateString, targetFolder+"//"+jsonName);
+		setJson.Fetch(formateString, targetFolder+"//"+jsonName);
 		//String filString = setJson.Fetch(formateString, "E://test"+"//"+jsonName);
 	}
 	

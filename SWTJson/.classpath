@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11">
-		<attributes>
-			<attribute name="module" value="true"/>
-		</attributes>
-	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="F:/安装文件/eclipse/plugins/org.eclipse.osgi_3.13.300.v20190218-1622.jar" sourcepath="F:/安装文件/eclipse/plugins/org.eclipse.osgi_3.13.300.v20190218-1622.jar"/>
 	<classpathentry kind="lib" path="F:/安装文件/eclipse/plugins/org.eclipse.core.commands_3.9.300.v20190215-1957.jar" sourcepath="F:/安装文件/eclipse/plugins/org.eclipse.core.commands_3.9.300.v20190215-1957.jar"/>
 	<classpathentry kind="lib" path="F:/安装文件/eclipse/plugins/org.eclipse.equinox.common_3.10.300.v20190218-2100.jar" sourcepath="F:/安装文件/eclipse/plugins/org.eclipse.equinox.common_3.10.300.v20190218-2100.jar"/>

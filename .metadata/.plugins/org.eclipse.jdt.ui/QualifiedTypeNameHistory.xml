@@ -1,2 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="com.json.folder.util.JsonFolderThread"/>
+    <fullyQualifiedTypeName name="java.lang.Readable"/>
+    <fullyQualifiedTypeName name="java.lang.Runnable"/>
+    <fullyQualifiedTypeName name="com.json.file.util.FileRealize"/>
+    <fullyQualifiedTypeName name="com.json.folder.util.JsonFileThread"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="org.eclipse.jface.dialogs.MessageDialog"/>
+    <fullyQualifiedTypeName name="com.json.folder.util.GetFile"/>
+    <fullyQualifiedTypeName name="com.json.folder.util.GetXml"/>
+    <fullyQualifiedTypeName name="com.json.folder.util.SetJson"/>
+    <fullyQualifiedTypeName name="com.json.folder.util.FormatUtil"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.resources.compiler"/>
+    <fullyQualifiedTypeName name="com.json.folder.util.Xml2Json"/>
+    <fullyQualifiedTypeName name="com.json.realize.FolderRealize"/>
+    <fullyQualifiedTypeName name="com.json.thread.JsonFolderThread"/>
+    <fullyQualifiedTypeName name="com.json.thread.JsonFileThread"/>
+    <fullyQualifiedTypeName name="net.sf.json.JSONException"/>
+    <fullyQualifiedTypeName name="net.sf.json.xml.XMLSerializer"/>
+    <fullyQualifiedTypeName name="net.sf.json.JSONObject"/>
+</qualifiedTypeNameHistroy>
