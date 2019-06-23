@@ -16,10 +16,14 @@ public class SetJson {
         }
       
 	}
-	
 	public String Fetch(String string,String fileString) {
 		SetJson setJson = new SetJson();
 		setJson.write(string, fileString);
 		return fileString;
 	}
+	/*
+	 * public static void main(String[] args) {
+	 * 
+	 * }
+	 */
 }

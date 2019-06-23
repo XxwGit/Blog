@@ -1,7 +1,5 @@
 package com.json.util;
 
-import net.sf.json.JSONException;
-import net.sf.json.JSONObject;
 
 //∏Ò ΩªØString  
 public class FormatUtil {

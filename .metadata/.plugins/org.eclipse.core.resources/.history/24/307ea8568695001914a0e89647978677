@@ -1,7 +1,5 @@
 package com.json.util;
 
-import net.sf.json.JSONObject;
-import net.sf.json.xml.XMLSerializer;
 
 //½«
 public class Xml2Json {
