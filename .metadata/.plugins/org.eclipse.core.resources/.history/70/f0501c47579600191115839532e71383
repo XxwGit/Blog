@@ -1,0 +1,8 @@
+package com.json.util;
+
+public class CheckName {
+	public String name(String name) {
+		return name;
+		
+	}
+}

@@ -16,9 +16,15 @@ public class GetXml {
 	//获取xml文件的名字并修改为.json文件
 	public String getName(String string) {
 		File file = new File(string.trim());
-		return file.getName().replace(".xml", ".json");
+		if (file.getName().contains(".xml")) {
+			return file.getName().replace(".xml", ".json");
+		}else if (file.getName().contains(".lfc")) {
+			return file.getName().replace(".lfc", ".json");
+		}else {
+			return null;
+		}
 	}
-
+	
 	//将xml文件先转换为String的形式
 	public String turnDocumentToString(String string) {
 		try {

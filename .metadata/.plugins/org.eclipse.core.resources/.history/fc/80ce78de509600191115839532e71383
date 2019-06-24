@@ -1,0 +1,14 @@
+package com.json.test;
+
+import java.io.File;
+
+public class Test {
+	public static void main(String[] args) {
+		String strPath = "E:\\a\\aa\\aaa.txt";  
+		File file = new File(strPath);  
+		if(!file.exists())){  
+		    file.createNewFile();  
+		}  
+		
+	}
+}

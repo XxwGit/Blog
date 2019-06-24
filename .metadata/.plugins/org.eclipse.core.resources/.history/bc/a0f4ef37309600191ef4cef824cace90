@@ -1,0 +1,18 @@
+package com.json.test;
+
+import java.io.File;
+
+public class FileTest {
+	public File[] getFiles(File file) {
+        File[] fs = file.listFiles();
+        return fs;
+    }
+	
+	
+    public static void main(String[] args) {
+        String inputPath = "E:\\test";;		//要遍历的路径
+        File file = new File(inputPath);		//获取其file对象
+        FileTest fileTest = new FileTest();
+        File[] files = fun 
+    }
+}

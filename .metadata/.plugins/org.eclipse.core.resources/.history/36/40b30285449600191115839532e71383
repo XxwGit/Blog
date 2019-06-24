@@ -1,0 +1,11 @@
+package com.json.test;
+
+public class FileTest3 {
+	public static void getAllFileName() {
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

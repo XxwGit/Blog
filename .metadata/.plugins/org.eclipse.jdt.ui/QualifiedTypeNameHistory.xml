@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="com.json.folder.util.JsonFolderThread"/>
     <fullyQualifiedTypeName name="java.lang.Readable"/>
     <fullyQualifiedTypeName name="java.lang.Runnable"/>
@@ -20,4 +19,10 @@
     <fullyQualifiedTypeName name="net.sf.json.JSONException"/>
     <fullyQualifiedTypeName name="net.sf.json.xml.XMLSerializer"/>
     <fullyQualifiedTypeName name="net.sf.json.JSONObject"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="com.sun.org.apache.xpath.internal.functions.Function3Args"/>
+    <fullyQualifiedTypeName name="com.json.util.GetFile"/>
+    <fullyQualifiedTypeName name="com.json.test.FileTest"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="com.json.test.FileTest2"/>
 </qualifiedTypeNameHistroy>

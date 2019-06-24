@@ -1,0 +1,36 @@
+package com.json.util;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+//生成json文件
+public class SetJson {
+	public void write(String string,String fileString,String nameString) {
+        try {
+        	
+            FileWriter writer = new FileWriter(fileString,false);
+            File file = new File(nameString);
+            if (!file.exists()) {
+				file.mkdirs();
+				 writer.write(string);
+		         writer.flush();
+		         writer.close();
+			}else {
+				System.out.println("读入失败");
+			}
+           
+            
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+      
+	}
+	
+	public String Fetch(String string,String fileString,String nameString) {
+		SetJson setJson = new SetJson();
+		String Finalstring1 = string.replace("@", "");
+		String finalString = Finalstring1.replace("#", "");
+		setJson.write(finalString, fileString,nameString);
+		return fileString;
+	}
+}

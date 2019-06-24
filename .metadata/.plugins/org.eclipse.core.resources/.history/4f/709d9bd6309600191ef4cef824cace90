@@ -1,0 +1,5 @@
+package com.json.test;
+
+public enum FileTest2 {
+
+}

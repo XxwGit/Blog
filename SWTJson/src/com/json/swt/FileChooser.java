@@ -25,6 +25,7 @@ public class FileChooser {
 	private Text targetFile;
 	public String sourceFileString;
 	public String targetFileString;
+
 	/**
 	 * Launch the application.
 	 * 
@@ -76,18 +77,23 @@ public class FileChooser {
 		sourseFileButton.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
-				JFileChooser jfc=new JFileChooser();  
-		        jfc.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES );  
-		        jfc.showDialog(new JLabel(), "选择文件夹");  
-		        
-		        File file=jfc.getSelectedFile();  
-		        if(file.isDirectory()){  
-		            System.out.println("源文件夹:"+file.getAbsolutePath());  
-		        }else if(file.isFile()){  
-		            System.out.println("源文件:"+file.getAbsolutePath());  
-		        }  
-		        sourseFile.setText(file.getAbsolutePath());
-		        sourceFileString = file.getAbsolutePath();
+				JFileChooser jfc = new JFileChooser();
+				jfc.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
+				jfc.showDialog(new JLabel(), "选择文件夹");
+				System.out.println(jfc.getSelectedFile());
+				File file = jfc.getSelectedFile();
+				if (file == null) {
+					MessageDialog.openInformation(shell, "提示", "请选择目标文件夹");
+				} else {
+					/*
+					 * if (file.isDirectory()) { System.out.println("源文件夹:" +
+					 * file.getAbsolutePath()); } else if (file.isFile()) {
+					 * System.out.println("源文件:" + file.getAbsolutePath()); }
+					 */
+					sourseFile.setText(file.getAbsolutePath());
+					sourceFileString = file.getAbsolutePath();
+				}
+
 			}
 		});
 
@@ -104,17 +110,22 @@ public class FileChooser {
 		targetFileButton.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
-				JFileChooser jfc=new JFileChooser();  
-		        jfc.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES );  
-		        jfc.showDialog(new JLabel(), "选择");  
-		        File file=jfc.getSelectedFile();  
-		        if(file.isDirectory()){  
-		            System.out.println("目标文件夹:"+file.getAbsolutePath());  
-		        }else if(file.isFile()){  
-		            System.out.println("目标文件:"+file.getAbsolutePath());  
-		        }  
-		        targetFile.setText(file.getAbsolutePath());
-		        targetFileString = file.getAbsolutePath();
+				JFileChooser jfc = new JFileChooser();
+				jfc.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
+				jfc.showDialog(new JLabel(), "选择");
+				File file = jfc.getSelectedFile();
+				if (file==null) {
+					MessageDialog.openInformation(shell, "提示", "请选择输出文件夹");
+				}else {
+					/*
+					 * if (file.isDirectory()) { System.out.println("目标文件夹:" +
+					 * file.getAbsolutePath()); } else if (file.isFile()) {
+					 * System.out.println("目标文件:" + file.getAbsolutePath()); }
+					 */
+					targetFile.setText(file.getAbsolutePath());
+					targetFileString = file.getAbsolutePath();
+				}
+				
 			}
 		});
 
@@ -125,23 +136,24 @@ public class FileChooser {
 			@Override
 			public void widgetSelected(SelectionEvent arg0) {
 				// TODO Auto-generated method stub
-				String path =sourceFileString;
-		        File file = new File(path);
-		        if(file.isDirectory()){
-		            System.out.println("准换的目标是文件夹");
-		            JsonFolderThread jsonThread = new JsonFolderThread(sourceFileString, targetFileString);
+				String path = sourceFileString;
+				File file = new File(path);
+
+				if (file.isDirectory()) {
+					System.out.println("准换的目标是文件夹");
+					JsonFolderThread jsonThread = new JsonFolderThread(sourceFileString, targetFileString);
 					Thread thread = new Thread(jsonThread);
 					thread.run();
 					MessageDialog.openInformation(shell, "提示", "转换成功");
-		        }
-		        if(file.isFile()){
-		            System.out.println("准换的目标是文件");
-		            JsonFileThread jsonFileThread = new JsonFileThread(sourceFileString, targetFileString);
-		            Thread thread = new Thread(jsonFileThread);
+				}
+				if (file.isFile()) {
+					System.out.println("准换的目标是文件");
+					JsonFileThread jsonFileThread = new JsonFileThread(sourceFileString, targetFileString);
+					Thread thread = new Thread(jsonFileThread);
 					thread.run();
 					MessageDialog.openInformation(shell, "提示", "转换成功");
-		        }
-				
+				}
+
 			}
 
 			@Override
