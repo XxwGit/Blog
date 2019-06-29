@@ -1,7 +1,0 @@
-package com.json;
-
-public class WriteFloder {
-	public static void main(String[] args) {
-		
-	}
-}

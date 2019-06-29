@@ -1,7 +1,0 @@
-package com.json;
-
-public class SetJson {
-	public void name() {
-		
-	}
-}

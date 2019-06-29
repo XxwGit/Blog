@@ -23,11 +23,7 @@ public class FolderRealize {
 			CheckName checkName = new CheckName();
 			
 			String finalFile = checkName.name(target);
-			if (target.contains(".xml")) {
-				finalFile = target.replace(".xml", ".json");
-			}else if (target.contains(".lfc") ){
-				finalFile = target.replace(".lfc", ".json");
-			}
+			
 			System.out.println(finalFile);
 			//String jsonName = getXml.getName("E://repo//XxwGit.github.io//_includes//XmlTest"+"//"+files[6]);
 			System.out.println(jsonName);
